@@ -1,0 +1,21 @@
+.left
+{
+    margin-right: 1em;
+}
+
+.editor
+{
+    width: 49%;
+}
+
+.render
+{
+    width: 49%;
+    overflow: auto;
+}
+
+.container
+{
+    width: auto;
+    margin: 1em;
+}
