@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -10,21 +10,37 @@
 
 <body>
     <div class="container">
-        <textarea class="left editor" cols="20" placeholder="Put some text here"></textarea>
-        <textarea class="right editor" cols="20" placeholder="And here"></textarea>
-    </div>
-    <div class="container">
-        <div class="row">
-            <pre class="left render col-xs-6 col-sm-4"></pre>
-            <pre class="right render col-xs-6 col-sm-4"></pre>
+        <div class="row main">
+            <div class="col-sm-4 editor">
+                <div class="btn-Group">
+                    <button class="btn btn-default btn-small" id="leftToXml">Format as XML</button>
+                </div>
+
+                <textarea class="left editor linked" placeholder="Put some text here"></textarea>
+            </div>
+            <div class="col-sm-4 editor">
+                <div class="btn-Group">
+                    <button class="btn btn-default btn-small" id="rightToXml">Format as XML</button>
+                </div>
+                <textarea class="right editor linked" placeholder="And here"></textarea>
+            </div>
+            <div class="col-sm-4 main">
+                <div class="btn-Group">
+                    <button class="btn btn-default btn-sm" id="leftOnly">Left Only</button>
+                    <button class="btn btn-default btn-sm" id="rightOnly">Right Only</button>
+                    <button class="btn btn-default btn-sm" id="showBoth">Show Both</button>
+                    <button class="btn btn-default btn-sm" id="toggleEditor"><span>Hide Editor</span><span style="display: none">Show Editor</span></button>
+                </div>
+                <pre class="render main linked"></pre>
+            </div>
         </div>
     </div>
 
     <script src='http://code.jquery.com/jquery-1.9.1.js'></script>
     <script src='http://code.jquery.com/ui/1.9.2/jquery-ui.js'></script>
     <script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
-    <script src='https://neil.fraser.name/software/diff_match_patch/svn/trunk/javascript/diff_match_patch.js'></script>
-
+    <script src='js/diff_match_patch.js'></script>
+    <script src='js/vkbeautify.0.99.00.beta.js'></script>
     <script src="js/index.js"></script>
 </body>
 

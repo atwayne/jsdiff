@@ -1,26 +1,67 @@
-.left
+body, html
 {
-    margin-right: 1em;
+    height: 100%;
+    padding: 1em;
 }
 
-.editor
+
+.row.main
 {
-    width: 49%;
+    height: 97%;
 }
 
-.render
+
+textarea.editor, textarea.render, pre.render
 {
-    width: 49%;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    padding: 1em;
+    padding-top: 35px;
+}
+
+textarea
+{
+    white-space: nowrap;
     overflow: auto;
+}
+
+pre.render
+{
+    overflow: scroll;
+    word-wrap: inherit;
 }
 
 .container
 {
     width: auto;
+    height: 100%;
     margin: 1em;
 }
 
-del, ins
+.row.main div
 {
-		font-size:large;
+    height: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.row.button
+{
+    padding: 1em;
+    margin-bottom: 0.5em;
+    text-align: right;
+}
+
+
+.row.main div.btn-Group
+{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 34px;
+    text-align: right;
+    padding-left: 1px;
+    padding-right: 1px;
 }
